@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Register</h2>
+    <!-- Form starts here -->
+    <form id="register-form" method="post" action="register.php" enctype="multipart/form-data">
+        <!-- Profile picture upload field -->
+        <div class="form-group">
+            <label for="photo">Profile Picture:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+        </div>
+        <div class="form-group">
+            <input type="text" name="username" placeholder="Username" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Register</button>
+        </div>
+        <div class="form-group switch-form">
+            <span>Already have an account? <a href="index.html">Login</a></span>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

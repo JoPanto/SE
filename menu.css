@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px 0; /* Add padding to the top and bottom of the navbar */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px; /* Adjust padding for better spacing */
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555; /* Darken the background color on hover */
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+}
+
+.user-table {
+    margin-top: 20px; /* Add space between the navbar and the table */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background color */
+}
+
+tr:hover {
+    background-color: #ddd; /* Highlight row on hover */
+}
+
+td img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%; /* Make the user photos circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
